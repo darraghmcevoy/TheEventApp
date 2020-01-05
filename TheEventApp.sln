@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEventApp", "TheEventApp.csproj", "{E4CE5B11-E054-4DD9-955F-6B0A24329BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEventApp.Tests", "..\TheEventApp.Tests\TheEventApp.Tests.csproj", "{3A6C78BA-5DD4-4FC9-9255-2E7C6EAFD1FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4CE5B11-E054-4DD9-955F-6B0A24329BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CE5B11-E054-4DD9-955F-6B0A24329BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CE5B11-E054-4DD9-955F-6B0A24329BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CE5B11-E054-4DD9-955F-6B0A24329BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6C78BA-5DD4-4FC9-9255-2E7C6EAFD1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6C78BA-5DD4-4FC9-9255-2E7C6EAFD1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6C78BA-5DD4-4FC9-9255-2E7C6EAFD1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6C78BA-5DD4-4FC9-9255-2E7C6EAFD1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E395BFA6-3B3C-42F2-A04B-4ED493A34AE8}
+	EndGlobalSection
+EndGlobal
