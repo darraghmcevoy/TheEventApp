@@ -10,7 +10,7 @@ namespace TheEventApp.Models
 {
     public class Event
     {
-        [Required(ErrorMessage = "Please Enter Your EventID"), MaxLength(30)]
+        [Required(ErrorMessage = "Please Enter Your EventID")]
         [Display(Name = "Event ID")]
         public int EventID { get; set; }
         [Required(ErrorMessage = "Please enter the name of this event")]
