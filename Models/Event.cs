@@ -24,6 +24,7 @@ namespace TheEventApp.Models
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter your Email address")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
+        [StringLength(500, MinimumLength = 10)]
 
 
         public string Email { get; set; }
