@@ -10,15 +10,16 @@ namespace TheEventApp.Models
 {
     public class Event
     {
-        [Required(ErrorMessage = "Please Enter Your EventID"), MaxLength(30)]
+        [Required(ErrorMessage = "Please Enter Your EventID")]
         [Display(Name = "Event ID")]
         public int EventID { get; set; }
         [Required(ErrorMessage = "Please enter the name of this event")]
         [Display(Name = "Event Name")]
         [MaxLength(30)]
         public string Title { get; set; }
-        
+        [Required(ErrorMessage = "Please enter the date of your event")]
         [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter your Email address")]

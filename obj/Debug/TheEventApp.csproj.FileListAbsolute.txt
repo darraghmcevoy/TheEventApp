@@ -99,7 +99,6 @@ C:\Users\mcevo\source\repos\TheEventApp\bin\System.Web.WebPages.Deployment.xml
 C:\Users\mcevo\source\repos\TheEventApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\mcevo\source\repos\TheEventApp\bin\Antlr3.Runtime.pdb
 C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csprojAssemblyReference.cache
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csproj.CopyComplete
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.dll
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.pdb
@@ -108,3 +107,6 @@ C:\Users\mcevo\source\repos\TheEventApp\bin\Glimpse.AspNet.dll
 C:\Users\mcevo\source\repos\TheEventApp\bin\Glimpse.Core.dll
 C:\Users\mcevo\source\repos\TheEventApp\bin\Glimpse.EF6.dll
 C:\Users\mcevo\source\repos\TheEventApp\bin\Glimpse.Mvc5.dll
+C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.Migrations.InitialCreate.resources
+C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csproj.GenerateResource.cache
+C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csprojAssemblyReference.cache
