@@ -19,6 +19,7 @@ namespace TheEventApp.Models
         public string Title { get; set; }
         
         [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter your Email address")]
