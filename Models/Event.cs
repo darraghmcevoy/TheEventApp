@@ -17,9 +17,8 @@ namespace TheEventApp.Models
         [Display(Name = "Event Name")]
         [MaxLength(30)]
         public string Title { get; set; }
-        [Required(ErrorMessage = "Please enter the date of your event")]
+        
         [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]
-        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Please enter your Email address")]
