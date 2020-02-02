@@ -8,7 +8,7 @@ namespace TheEventApp.Models.Repositories
 {
     public class Repository<T> where T : class
     {
-        private EventContext context = new EventContext();
+        private EventContext context = null;
         protected DbSet<T> DbSet
         {
             get; set;
@@ -16,9 +16,14 @@ namespace TheEventApp.Models.Repositories
 
         public Repository()
         {
+            context = new EventContext();
             DbSet = context.Set<T>();
         }
 
+        public Repository(EventContext context)
+        {
+            this.context = context;
+        }
         public List<T> GetAll()
         {
             return DbSet.ToList();
