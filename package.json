@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "jquery-validation": "1.19.1",
+    "entity-framework": "6.4.0",
+     "font-awesome": "4.7.0"
+  },
+  "devDependencies": {
+
+  }
+}

@@ -1,17 +1,49 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2 class="text-center">@ViewBag.Title.</h2>
+<h3 class="text-center">@ViewBag.Message</h3>
+
+<div class="col-md-6 offset-md-3">
+    <div class="card card-body bg-light">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label asp-for="Name">Your Name:</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <input type="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject">Subject:</label>
+                <input type="text" asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message">Message:</label>
+                <textarea rows="4" asp-for="Message" class="form-control"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Send Message</button>
+                <div class="text-success">@ViewBag.UserMessage</div>
+            </div>
+        </form>
+    </div>
+</div>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    The Priory<br />
+    Grange Road, Rathfarnham, D16<br />
     <abbr title="Phone">P:</abbr>
-    425.555.0100
+    +353879386578
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Support:</strong>   <a href="mailto:mcevoy4@hotmail.com">mcevoy4@hotmail.com</a><br />
+
 </address>

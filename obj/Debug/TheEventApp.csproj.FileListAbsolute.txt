@@ -218,3 +218,16 @@ C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csprojAssemblyRefe
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csproj.CopyComplete
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.dll
 C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.pdb
+C:\Users\mcevo\source\repos\TheEventApp\obj\Debug\TheEventApp.csproj.CoreCompileInputs.cache
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\mcevo\source\repos\TheEventApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\mcevo\source\repos\TheEventApp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\mcevo\source\repos\TheEventApp\bin\System.Threading.Tasks.Extensions.xml
