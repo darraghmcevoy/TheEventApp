@@ -1,0 +1,86 @@
+﻿@model TheEventApp.Models.EventDetailModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.InviteEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.InviteEmail)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <h2>Event Attendees</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Attending?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.EventAttendees)
+            {
+                <tr>
+                    <td>@item.User.Email</td>
+                    <td>@item.Accepted</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Event.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

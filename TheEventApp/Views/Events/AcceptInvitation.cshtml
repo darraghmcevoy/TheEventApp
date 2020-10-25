@@ -1,0 +1,163 @@
+﻿@model TheEventApp.Models.EventDetailModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event.InviteEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event.InviteEmail)
+        </dd>
+
+    </dl>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <button id="btnAccept" class="btn btn-primary btn-md" Style="width: 100px;" data-event-id="@Model.Event.Id" data-title="@Model.Event.Title" data-date="@Model.Event.Date" data-time="@Model.Event.Time">Accept</button>
+        <button id="btnReject" class="btn btn-danger btn-md" Style="width: 100px;" data-event-id="@Model.Event.Id" data-title="@Model.Event.Title" data-date="@Model.Event.Date" data-time="@Model.Event.Time">Reject</button>
+    </div>
+</div>
+<div>
+    <h2>Event Attendees</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Attending?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.EventAttendees)
+            {
+                <tr>
+                    <td>@item.User.Email</td>
+                    <td>@item.Accepted</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<script type="text/javascript">
+    $('#btnAccept').click(function () {
+        $.ajax({
+            url: '@Url.Action("AttendEvent","Events")/@Model.Event.Id',
+            method: 'POST',
+            success: function (data) {
+                    if (data.Message == "Please register first and then signup for an event!") {
+                        //redirect to registration page.
+                        alert(data.Message);
+                        window.location.href = '@Url.Action("Register","Account")';
+                    } else if (data.Message == "Successfully Saved!") {
+                        //close the popup
+                        alert(data.Message);
+                    } else {
+                        alert(data.Message);
+                    }
+                },
+            error: function (data, xhr, errorthrown) {
+                alert(errorthrown);
+                }
+            });
+    });
+
+    $('#btnReject').click(function () {
+        $.ajax({
+            url: '@Url.Action("RejectEvent", "Events")/@Model.Event.Id',
+            method: 'POST',
+            success: function (data) {
+                    if (data.Message == "Please register first and then signup for an event!") {
+                        //redirect to registration page.
+                        alert(data.Message);
+                        window.location.href = '@Url.Action("Register","Account")';
+                    } else if (data.Message == "Successfully Saved!") {
+                        alert(data.Message);
+                    } else {
+                        alert(data.Message);
+                    }
+                },
+            error: function (data, xhr, errorthrown) {
+                alert(errorthrown);
+                }
+            });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-image:url('~/Images/eventhome.jpg');">
+    <h1>Event Management</h1>
+    <p class="lead">Signup to create any event with us.</p>
+    <p>@Html.ActionLink("Learn more", "About", "Home", new { @class = "btn btn-primary btn-lg" })</p>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="~/Images/birthday-cake-380178_640.jpg" class="img-fluid, img-responsive" />
+        <h2>Are you planning a Birthday Party?</h2>
+        <p>Organise your next party through The Event App</p>
+        @*@<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Get the party started!&raquo;</a></p>*@
+    </div>
+    <div class="col-md-4">
+        <img src="~/Images/band-171117_640.jpg"  class="img-fluid, img-responsive" />
+        <h2>Are you planning a Gig?</h2>
+        <p>Organise your next gig with The Event App.</p>
+        @*@<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Play now! &raquo;</a></p>*@
+    </div>
+    <div class="col-md-4">
+        <img src="~/Images/smoke-1568953_640.jpg"  class="img-fluid, img-responsive" />
+        <h2>Are you planning a BBQ?</h2>
+        <p>Organise a summer get together with the Event App.</p>
+        @*@<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Invite Here!&raquo;</a></p>*@
+    </div>
+</div>
