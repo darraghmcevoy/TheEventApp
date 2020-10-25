@@ -38,7 +38,7 @@ namespace TheEventApp.Migrations
                     userManager.AddToRoleAsync(user.Id, "Admin").Wait();
                     userManager.AddToRoleAsync(user.Id, "Eventor").Wait();
                 }
-            }
+            } //
         }
     }
 }
