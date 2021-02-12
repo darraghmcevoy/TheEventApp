@@ -8,9 +8,9 @@ namespace TheEventApp.Models
     {
         public static void SendEmail(Event @event, ApplicationUser @appUser)
         {
-            string toEmail = "darraghmcevoy3@gmail.com";
-            string fromEmail = "darraghmcevoy3@gmail.com";//change sender email
-            string fromEmailPwd = "brunocat22"; //add sender password
+            string toEmail = "joeblogs@gmail.com";
+            string fromEmail = "joeblogs@gmail.com";//change sender email
+            string fromEmailPwd = "joe12345"; //add sender password
             var email = new MimeMessage();
             email.From.Add(new MailboxAddress("Event Manager", fromEmail));
             email.To.Add(new MailboxAddress("Recipient", toEmail));
